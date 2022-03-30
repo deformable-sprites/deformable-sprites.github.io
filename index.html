@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Project Page for Deformable Sprites">
+  <meta name="author" content="Vickie Ye">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:image" content="https://deformable-sprites.github.io/teaser.png">
+  <meta property="og:url" content="https://deformable-sprites.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Deformable Sprites for Unsupervised Video Decomposition">
+  <meta property='og:video' content='https://www.youtube.com/embed/oXUf6anNAtc'/>
+  <meta property="og:description" content="Decomposing a video into its dynamic scene components.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@vickie_ye_">
+  <meta name="twitter:title" content="Deformable Sprites for Unsupervised Video Decomposition">
+  <meta name="twitter:description" content="Decomposing a video into its dynamic scene components.">
+  <meta name=”twitter:url” content=”https://deformable-sprites.github.io” />
+  <meta name="twitter:image" content="https://deformable-sprites.github.io/teaser.png">
+
+  <title>
+      Deformable Sprites for Unsupervised Video Decomposition
+  </title>
+  <link rel="canonical" href="https://deformable-sprites.github.io">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+      margin: 40px auto;
+      max-width: 960px;
+      line-height: 1.6;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      color: #444;
+      padding:0 10px;
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+    h4 { margin-bottom: 0pt; }
+
+	a {
+	  color: #1A69D3;
+	  text-decoration: none;
+	}
+	a:hover {
+	  color: #5D91D8;
+	}
+	a:active {
+	  color: #5D91D8;
+	}
+	.header {
+	    color: #444;
+	}
+    .row {
+          display: flex;
+    }
+    p {
+      line-height: 150%;
+    }
+    h1, h2 {
+      font-weight: 200;
+    }
+    h2 a {
+      color: #000;
+    }
+    h3 {
+      margin-top: 40px;
+    }
+
+    a:hover img {
+      opacity: .5;
+    }
+    .paper img { background: #888; }
+    .video img {
+      border-radius: 6px;
+      background: #000;
+    }
+    h1 span {
+      font-size: 90%;
+      line-height: 1.5em;
+    }
+    h1 span::before { content: "("; }
+    h1 span::after { content: ")"; }
+    h1 span::before, h1 span::after {
+      vertical-align: .06em;
+    }
+    h2 span {
+      line-height: 2em;
+    }
+    em {
+      color: #333;
+      font-weight: bold;
+      font-style: normal;
+    }
+    .teaser {
+      max-width: 45em;
+      margin: 40px 0 60px 0;
+      white-space: nowrap;
+      position: relative;
+    }
+    .teaser .imgs .full {
+      width: 100%;
+    }
+    .teaser .imgs .center {
+      position: absolute;
+      width: 32%;
+      top: -3%;
+      left: 34%;
+    }
+    .teaser .labels span {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .bibtex {
+      white-space: pre;
+      font-family: monospace;
+      line-height: 150%;
+      background: #f3f3f3;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+    .crow > * {
+      vertical-align: middle;
+      margin-right: 14px;
+    }
+    a.img {
+      display: inline-block;
+    }
+    .links {
+      display: inline-block;
+      line-height: 150%;
+      padding: 8px 0;
+    }
+    .links a {
+      padding: 0 3px;
+    }
+    .examples {
+      padding: 10px 0;
+      max-width: 50em;
+    }
+    .examples img {
+      display: inline-block;
+      width: 192px;
+      height: 108px;
+
+    }
+    .video-container {
+      position: relative;
+      width: 80%;
+      padding-bottom: 45%;
+    }
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+</style>
+<h1 align="center"></h1><br>
+<div class="container">
+	<div class="row mb-2 mt-4" id="paper-title">
+		<h1 class="col-md-12 text-center">
+            Deformable Sprites for Unsupervised Video Decomposition
+		</h1>
+		<h3 class="col-md-12 text-center">
+			<small>CVPR 2022 (Oral)</small>
+		</h3>
+	</div>
+    <div class="row" id="authors">
+        <div class="mx-auto text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="https://people.eecs.berkeley.edu/~vye">Vickie Ye</a>
+                    <sup>1</sup>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="https://zhengqili.github.io/">Zhengqi Li</a>
+                    <sup>2</sup>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>
+                    <sup>2</sup>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>
+                    <sup>1</sup>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+                    <sup>2</sup>
+                </li>
+            </ul>
+            <ul class="list-inline mb-0" id="institution">
+                <li class="list-inline-item">
+                    <sup>1</sup>
+                    UC Berkeley
+                </li>
+                <li class="list-inline-item">
+                    <sup>2</sup>
+                    Google Research	
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h3>Abstract</h3>
+<p align="justify">
+We describe a method to extract persistent elements of a dynamic scene from an input video. 
+We represent each scene element as a <i>Deformable Sprite</i> consisting of three components: 
+1) a 2D texture image for the entire video,
+2) per-frame masks for the element,
+and
+3) non-rigid deformations that map the texture image into each video frame.
+The resulting decomposition allows for applications such as consistent video editing. 
+Deformable Sprites are a type of video auto-encoder model that is optimized on individual videos, and does not require training on a large dataset, nor does it rely on pre-trained models.
+Moreover, our method does not require object masks or other user input, 
+and discovers moving objects of a wider variety than previous work.
+We evaluate our approach on standard video datasets and show qualitative results on a diverse array of Internet videos. 
+</p>
+
+<h3>Paper</h3>
+<div class=crow>
+<div class=links>
+<em>Deformable Sprites for Unsupervised Video Decomposition</em><br>
+Vickie Ye, Zhengqi Li, Richard Tucker, Angjoo Kanazawa, Noah Snavely<br>
+Ameesh Makadia, Noah Snavely, Angjoo Kanazawa<br><br>
+CVPR 2022 Oral<br>
+ARXIV LINK TODO
+</div>
+</div>
+
+<h3>Video</h3>
+
+<div class="video-container">
+    <iframe class="video" src="https://www.youtube.com/embed/oXUf6anNAtc" allowfullscreen></iframe>
+</div>
+<div class=crow>
+<div class=links>
+[<a href="https://youtu.be/oXUf6anNAtc">YouTube</a>]
+</div>
+</div>
+
+<h3>Video Decomposition</h3>
+TODO
+
+<h3>Consistent Editing</h3>
+TODO
+
+<h3>Code</h3>
+We've released code for replicating experiments and running Deformable Sprites on any videos provided by the user.
+<br>
+[<a href="https://github.com/google-research/vye16/deformable-sprites">Github</a>]
+
+<h3>BibTeX</h3>
+<div class=bibtex>@InProceedings{deformable_sprites_2022,
+  author = {Ye, Vickie and Li, Zhengqi and Tucker, Richard and Kanazawa, Angjoo and Snavely, Noah},
+  title = {Deformable Sprites for Unsupervised Video Decomposition},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2022}
+}
+</div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2KJW23TXF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H2KJW23TXF');
+</script>
+
